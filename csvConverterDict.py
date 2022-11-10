@@ -7,8 +7,8 @@ jsonFile = open (config.jsonDictFile, 'w', encoding = 'utf-8')
 
 
 reader = csv.DictReader(csvFile)
-for rows in reader:
-    key = rows[config.dictKey]
-    dataDic[key] = rows
+for row in reader:
+    key = row[config.dictKey]
+    dataDic[key] = row
 
 jsonFile.write(json.dumps(dataDic, indent = 4))

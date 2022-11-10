@@ -10,4 +10,4 @@ reader = csv.DictReader(csvFile)
 for row in reader:
     dataArray.append(row)
 
-jsonFile.write(json.dumps(dataArray, indent = 4))
+jsonFile.write(json.dumps(dataArray, indent=4))
